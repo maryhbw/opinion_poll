@@ -53,3 +53,8 @@ pypi_test:
 
 pypi:
 	@twine upload dist/* -u $(PYPI_USERNAME)
+
+##test scripts
+
+import:
+	@python opinion_poll/twitter_import.py
